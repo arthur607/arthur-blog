@@ -9,12 +9,13 @@ toggle.addEventListener('click', function () {
 const blogSection = document.querySelector(".blogs-section");
 
 var xhr = new XMLHttpRequest();
-xhr.open("GET", `http://localhost:8080/buscar`, true);
+xhr.open("GET", `http://localhost:8080/buscar`, false);
 xhr.setRequestHeader("Content-Type", "application/json");
 xhr.addEventListener("load", function () {
 
     if (xhr.status != 200) {
         console.log("erro na requisição");
+        
     }
     const articleResponseList = JSON.parse(xhr.responseText);
 

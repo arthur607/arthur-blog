@@ -6,10 +6,9 @@ xhr.setRequestHeader("Content-Type", "application/json");
 xhr.addEventListener("load", function () {
 
   if (xhr.status != 200) {
-    console.log("erro na requisição");
+    console.log("erro na requisição com id");
   }
   const articleResponse = JSON.parse(xhr.responseText);
-  console.log(articleResponse);
   const banner = document.querySelector(".banner");
   const blogTitle = document.querySelector(".title");
   const titleTag = document.querySelector(".title");
@@ -20,8 +19,6 @@ xhr.addEventListener("load", function () {
   publish.innerHTML += articleResponse.createAt;
 
   const article = document.querySelector('.article');
-  console.log(articleResponse.article);
-  console.log(articleResponse.article.split("\n").filter(item => item.length));
   let lines = articleResponse.article.split("\n").filter(item => item.length);
   lines.forEach(item => {
     if (item[0] == '#') {

@@ -167,7 +167,7 @@ a{
     margin-top: 60px;
     width: 100%;
     height: calc(100vh - 60px);
-    background: url(../img/header.png);
+    background: url(../img/header.jpeg);
     background-size: cover;
     display: flex;
     justify-content: center;
