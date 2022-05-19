@@ -164,7 +164,7 @@ a{
     color: #fff;
 }
 .header{
-    margin-top: 60px;
+    /* margin-top: 10px; */
     width: 100%;
     height: calc(100vh - 60px);
     background: url(../img/header.jpeg);
@@ -198,7 +198,7 @@ a{
 }
 .blogs-section{
     width: 100%;
-    padding: 50px 5vw;
+    padding: 50px 8vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 80px;
@@ -210,6 +210,7 @@ a{
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
+    border-radius: 2%;
 }
 
 .blog-overview{

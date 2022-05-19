@@ -30,7 +30,6 @@ const uploadImage = (uploadFile, uploadType) => {
             body: formdata
         }).then(res => res.json())
             .then(data => {
-                console.log(data);
                 if (uploadType == "image") {
                     addImage(data, file.name);
                 } else {
@@ -70,7 +69,6 @@ publishBtn.addEventListener('click', () => {
             article: articleFeild.value,
             bannerImage: bannerPath
         }
-        console.log(request);
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
 
