@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog : Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header id="header" class="shadow bg-light" hidden>
+        <nav class="container navbar">
+            <a href="editor.html" class="nav-brand text-dark">
+                Arthur's blog
+            </a>
+               <!-- toggle button -->
+               <button class="toggle-button">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
+
+            <!-- collapse on toggle button click -->
+            <div class="collapse">
+                <ul class="navbar-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Contact</a>
+                    <a href="/blog-arthur/html/editor.html" class="nav-link">Write a Post</a>
+                </ul>
+            </div>
+
+             <!-- collapse on toggle button click -->
+             <div class="collapse">
+                 <ul class="navbar-nav">
+                     <div class="search-box">
+                         <a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                     </div>
+                     <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                     <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+                     <a href="#" class="nav-link"><i class="fab fa-dribbble"></i></a>
+
+                 </ul>
+             </div>
+        </nav>
+    </header>
+
+    <!--  -->
+    <div class="banner">
+        <input type="file" accept="image/*" id="banner-upload" hidden>
+        <label for="banner-upload" class="banner-upload-btn">
+            <img src="img/upload.png" alt="img">
+        </label>
+    </div>
+
+
+
+    <div class="blog">
+        <textarea type="text" class="title" placeholder="Blog title..."></textarea>
+        <textarea type="text" class="article" placeholder="Start writing here..."></textarea>
+    </div>
+
+
+    <div class="blog-options">
+        <button class="btn dark publish-btn">publish</button>
+        <input type="file" accept="image/*" id="image-upload" hidden>
+        <label for="image-upload" class="btn grey upload-btn">Upload Image</label>
+    </div>
+
+    <script src="js/editor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
