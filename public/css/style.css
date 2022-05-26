@@ -165,13 +165,14 @@ a{
 }
 .header{
     /* margin-top: 10px; */
-    width: 100%;
+    width: 60%;
     height: calc(100vh - 60px);
     background: url(../img/header.jpeg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .content{
@@ -216,4 +217,9 @@ a{
 .blog-overview{
     margin: 10px 0 20px;
     line-height: 30px;
+}
+
+#disqus_thread{
+    size-adjust: 300px;
+    margin: 0 50px;
 }
